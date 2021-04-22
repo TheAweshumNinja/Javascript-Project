@@ -11,7 +11,8 @@ const createFilmDiv = (film) =>{
     const originalTitle = document.createElement('p')
     const species = document.createElement('p')
     const location = document.createElement('p')
-    
+    const searchBtn= document.createElement('button')
+
     title.innerText= film.title
     description.innerText= film.description
 
