@@ -8,6 +8,9 @@ const createFilmDiv = (film) =>{
     const filmContainer= document.createElement('div')
     const title= document.createElement('p')
     const description = document.createElement('p')
+    const originalTitle = document.createElement('p')
+    const species = document.createElement('p')
+    const location = document.createElement('p')
     
     title.innerText= film.title
     description.innerText= film.description
