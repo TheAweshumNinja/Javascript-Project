@@ -15,11 +15,18 @@ const createFilmDiv = (film) =>{
 
     title.innerText= film.title
     description.innerText= film.description
-
-    filmContainer.append(title, description)
-
+    filmContainer.append(title, description, originalTitle, species, location, searchBtn)
+    return filmContainer
 }
 getFilms().then((film) => {
     const filmDiv = createFilmDiv(film)
     console.log(filmDiv)
+
 })
+function addingEventListener(){
+    const searchBtn = document.getElementById('search-button');
+    searchBtn.addingEventListener('click', function(event){
+        
+    })
+
+}
