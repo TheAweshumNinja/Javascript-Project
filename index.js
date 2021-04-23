@@ -23,10 +23,8 @@ getFilms().then((film) => {
     console.log(filmDiv)
 
 })
-function addingEventListener(){
-    const searchBtn = document.getElementById('search-button');
-    searchBtn.addingEventListener('click', function(event){
-        
-    })
+document.getElementById("search-button").addEventListener("click", myFunction);
 
+function myFunction() {
+  document.getElementById("search-button").innerHTML = "Search";
 }
