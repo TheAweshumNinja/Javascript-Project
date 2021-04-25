@@ -45,11 +45,13 @@ h2 {
     font-size: 40px;
     text-align: center;
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h3 {
     font-size:  40px;
     color: thistle;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 
 }
@@ -65,6 +67,7 @@ p {
     color: white;
     margin: 100px;
     padding-top: 0mm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 #search-film-form {
     text-align: center;
