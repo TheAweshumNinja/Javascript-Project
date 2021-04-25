@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css"/>
+    <script defer src="./index.js"></script>
     <title>Studio Ghibli Search</title>
 </head>
 <body>
     <h1 class= "app title">The World of Studio Ghibli</h1>
-    <form>
-        <div class="form-group">
+    <form id="search-film-form">
             <input type= "text" id="inputValue">
-        </div>
-        <button type="Search" id="search-button">Search</button>
+            <!-- <select name="" id="film-selection">
+                <option value="Castle in the Sky">Castle in the Sky</option>
+                <option value="Grave of the Fireflies">Grave of the Fireflies</option>
+            </select> -->
+        <button type="submit" id="search-button">Search</button>
     </form>
-    <script src="./index.js"></script>
+    <div class="form-group" id="film-container">
+    </div>
 </body>
 </html>
