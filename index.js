@@ -55,13 +55,13 @@ function showFilms (selectedFilmArray){
      */
     selectedFilmArray.forEach(film => {
         const createDiv = document.createElement('div');
-        const createH1 = document.createElement('h1'); 
+        const createH2 = document.createElement('h2'); 
         const createH3 = document.createElement('h3'); 
         const createP = document.createElement('p');
-        createH1.innerText = film.title; 
+        createH2.innerText = film.title; 
         createP.innerText = film.description;
         createH3.innerText = film.release_date; 
-        createDiv.append(createH1, createH3,createP); 
+        createDiv.append(createH2, createH3,createP); 
         filmContainerDiv.appendChild(createDiv);
     })
 }
