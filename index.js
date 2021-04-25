@@ -57,13 +57,15 @@ function showFilms (selectedFilmArray){
         const createDiv = document.createElement('div');
         const createH2 = document.createElement('h2'); 
         const createH22= document.createElement('h2')
+        const createRomTitle = document.createElement('h2')
         const createH3 = document.createElement('h3'); 
         const createP = document.createElement('p');
         createH2.innerText = film.title; 
         createH22.innerText = film.original_title;
+        createRomTitle.innerText= film.original_title_romanised;
         createP.innerText = film.description;
         createH3.innerText = film.release_date; 
-        createDiv.append(createH2,createH22, createH3,createP); 
+        createDiv.append(createH2,createH22, createRomTitle, createH3,createP); 
         filmContainerDiv.appendChild(createDiv);
     })
 }
